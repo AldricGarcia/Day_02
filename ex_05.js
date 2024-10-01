@@ -10,7 +10,6 @@ function getBasketContent()
     ];
 
 console.log(fruits.length + " fruit(s) selected");
-
 return fruits;
 }
 if (typeof getBasketContent === "function") {

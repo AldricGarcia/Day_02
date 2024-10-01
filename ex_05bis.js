@@ -1,4 +1,4 @@
-function getBasketContent(selectedCount)
+function getBasketContent(NbrFruits)
 {
     const fruits = 
     [
@@ -8,14 +8,11 @@ function getBasketContent(selectedCount)
     'peach',
     'pear', 'pear'
     ];
-	if (selectedCount > fruits.length)
+	if (NbrFruits > fruits.length)
     {
   	console.log("Too many fruit(s) selected.");
     return[];
     }
     console.log(fruits.length + " fruit(s) selected");
-    return fruits.slice(0, selectedCount);
+    return fruits.slice(0, NbrFruits);
 }
-
-let fruits = getBasketContent(10);
-showMyBasket(fruits);
